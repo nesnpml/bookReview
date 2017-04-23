@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A book discovery tool with a rating and recommendation system that is based on reviews from critics">
+
+    <title>Book Reviews</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <!--<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>-->
+                <a class="navbar-brand page-scroll" href="index.html">Book reviews from critics</a>
+            </div>
+            <div class="col-md-5 col-sm-12 col-xs-12">
+                <form class="navbar-form">
+                    <div class="form-group" style="display:inline;">
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="searchText" onkeydown="keydown()">
+                            <span class="input-group-addon"><span class="glyphicon glyphicon-search" onclick="search()";></span></span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <br><br><br>
+    <div class="container" id="searchResults">
+
+    </div>
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="lib/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script type="text/javascript" src="js/search.js"></script>
+    <script type="text/javascript" src="lib/jquery/jquery-ui.min.js"></script>
+
+</body>
+
+</html>
