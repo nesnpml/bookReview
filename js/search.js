@@ -89,7 +89,6 @@ function getSearchResults(){
     //modifying the search parameters to match the api input.
     var q = result['search'];
     q = q.split(" ").join("+");
-    console.log(q);
 
     //the api for book search returns only 1 book instead of a list of books 
 
@@ -100,7 +99,6 @@ function getSearchResults(){
             console.log('Something went wrong: ' + err);
         } 
         else {
-            console.log(JSON.stringify(response));
             var book = response.book;
             if (book.title == undefined){//if no book found
                 var searchResults = "<div class=\"search-results\">\""+ result["search"] +"\" did not match any book.</div>"
